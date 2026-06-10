@@ -19,7 +19,7 @@ variable "environment" {
 variable "project_name" {
   type        = string
   description = "Prefixe applique aux noms de ressources"
-  default     = "formation"
+  default     = "rmichaux-formation"
 }
 
 variable "vpc_cidr" {
