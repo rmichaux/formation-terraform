@@ -1,0 +1,16 @@
+#!/bin/bash
+# templates/nginx.sh.tftpl
+# Installation nginx et page d'accueil identifiant l'AZ.
+set -euxo pipefail
+
+# Update et installation nginx (Amazon Linux 2023 utilise dnf)
+dnf update -y
+dnf install -y nginx
+
+# Page d'accueil qui identifie l'AZ de l'instance
+cat > /usr/share/nginx/html/index.html <<HTML
+Salut depuis AZ ${az}
+HTML
+
+# Demarrer nginx au boot et immediatement
+systemctl enable --now nginx
