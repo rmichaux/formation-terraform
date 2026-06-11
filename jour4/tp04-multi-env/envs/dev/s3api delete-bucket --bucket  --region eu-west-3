@@ -1,0 +1,46 @@
+{
+    "Deleted": [
+        {
+            "Key": "envs/staging/vpc/terraform.tfstate.tflock",
+            "VersionId": "WFAfJN6udUp09MIy3VaeTbK6NjJBfCdi",
+            "DeleteMarker": true,
+            "DeleteMarkerVersionId": "WFAfJN6udUp09MIy3VaeTbK6NjJBfCdi"
+        },
+        {
+            "Key": "envs/dev/vpc/terraform.tfstate.tflock",
+            "VersionId": "P9AZLT5PCg6diZ6OOU6HSUnnPloYdZEf",
+            "DeleteMarker": true,
+            "DeleteMarkerVersionId": "P9AZLT5PCg6diZ6OOU6HSUnnPloYdZEf"
+        },
+        {
+            "Key": "envs/dev/vpc/terraform.tfstate.tflock",
+            "VersionId": "ILoLtcR7e_1sYZP.Q2jaFZp1Qsp9ahUr",
+            "DeleteMarker": true,
+            "DeleteMarkerVersionId": "ILoLtcR7e_1sYZP.Q2jaFZp1Qsp9ahUr"
+        },
+        {
+            "Key": "envs/dev/vpc/terraform.tfstate.tflock",
+            "VersionId": "mAqYsfXo8EiZGm0SrhVIVSx46PJXRYJk",
+            "DeleteMarker": true,
+            "DeleteMarkerVersionId": "mAqYsfXo8EiZGm0SrhVIVSx46PJXRYJk"
+        },
+        {
+            "Key": "envs/staging/vpc/terraform.tfstate.tflock",
+            "VersionId": "SzrVfx9lkPffFqcETnIrOmRdU6NgVrw4",
+            "DeleteMarker": true,
+            "DeleteMarkerVersionId": "SzrVfx9lkPffFqcETnIrOmRdU6NgVrw4"
+        },
+        {
+            "Key": "envs/staging/vpc/terraform.tfstate.tflock",
+            "VersionId": "mJNLxFEQZcVJ1Io72HPTGrQtieD3FqdO",
+            "DeleteMarker": true,
+            "DeleteMarkerVersionId": "mJNLxFEQZcVJ1Io72HPTGrQtieD3FqdO"
+        },
+        {
+            "Key": "envs/dev/vpc/terraform.tfstate.tflock",
+            "VersionId": "206dPjWXwyk3i3FSWYWK2N9weIyABCWX",
+            "DeleteMarker": true,
+            "DeleteMarkerVersionId": "206dPjWXwyk3i3FSWYWK2N9weIyABCWX"
+        }
+    ]
+}
