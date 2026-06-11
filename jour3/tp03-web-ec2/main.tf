@@ -24,7 +24,7 @@ data "aws_ami" "al2023" {
 }
 
 # -----------------------------------------------------------------------------
-# Key Pair : votre cle publique SSH locale
+# Key Pair : cle publique SSH locale
 # AWS la deposera automatiquement dans ~/.ssh/authorized_keys de chaque EC2.
 # -----------------------------------------------------------------------------
 resource "aws_key_pair" "formation" {
@@ -32,7 +32,8 @@ resource "aws_key_pair" "formation" {
   public_key = file(pathexpand(var.public_key_path))
 
   tags = {
-    Name = "${local.name_prefix}-key"
+    Name  = "${local.name_prefix}-key"
+    Owner = "etudiant20"
   }
 }
 
@@ -92,8 +93,8 @@ resource "aws_instance" "bastion" {
   associate_public_ip_address = true
 
   tags = {
-    Name = "${local.name_prefix}-bastion"
-    Role = "bastion"
+    Name  = "${local.name_prefix}-bastion"
+    Role  = "bastion"
     Owner = "etudiant20"
   }
 }
@@ -139,9 +140,9 @@ resource "aws_instance" "web" {
   }
 
   tags = {
-    Name = "${local.name_prefix}-web-${each.key}"
-    Role = "web"
+    Name  = "${local.name_prefix}-web-${each.key}"
+    Role  = "web"
     Owner = "etudiant20"
-    AZ   = each.key
+    AZ    = each.key
   }
 }
